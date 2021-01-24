@@ -5,7 +5,7 @@ The goal is to find the best combination of strings vectorizing and ML model. <b
 Codes can be seperated into 2 categories:<br/>
   1) Preprocesing data
   2) Creation of a models
-I divided data into full and partial in order to create 2 separated data base<br/>
+The data is divided into full and partial in order to create 2 separated data base<br/>
 # Preprocesing
 In Komentarze.py are comments scrapped from Wirtualna Polska, and tagged within categories: Groźby karalne, obraźliwe, złośliwe, krytykam, ostra krytyka, pozostałe.<br/>
 In Lematized.py the prepare data for lematization: delete stop_words and nubmers, correct mistakes, and finally lematize all comments.<br/>
