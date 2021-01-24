@@ -4,7 +4,7 @@ The main idea is to create a model with can easly detect toxic speech. The datab
 The goal is to find the best combination of strings vectorizing and ML model. <br/>
 Codes can be seperated into 2 categories:<br/>
   1) Preprocesing data
-  2) Creation of a models
+  2) Creation of a models<br/>
 The data is divided into full and partial in order to create 2 separated data base<br/>
 # Preprocesing
 In Komentarze.py are comments scrapped from Wirtualna Polska, and tagged within categories: Groźby karalne, obraźliwe, złośliwe, krytykam, ostra krytyka, pozostałe.<br/>
