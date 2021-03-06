@@ -11,17 +11,17 @@ from sklearn.svm import SVC
 sv = SVC()
 RFC = RandomForestClassifier()
 GaussianN = GaussianNB()
-KNC = KNeighborsClassifier(n_neighbors=20)
+KNC = KNeighborsClassifier(n_neighbors=7)
 xgboost = XGBClassifier()
 gradientboost = GradientBoostingClassifier()
 
 
-df = pd.read_csv(r'../dataframes/full_csv', index_col=[0])
+df = pd.read_csv(r'dataframes/full_csv', index_col=[0])
 
 
 # with open(r'objects/wektor_lst', 'rb') as f:
 #     res_wek = np.load(f)
-res_wek = np.load(r'../objects/wektors.npy', allow_pickle=True)
+res_wek = np.load(r'objects/wektors.npy', allow_pickle=True)
 res_wek = [wek[0:20] for wek in res_wek]
 zzz = np.stack(res_wek)
 res_wek = zzz.reshape([7023,2000])
@@ -51,11 +51,11 @@ print(xgboost.score(X_test, y_test))
 
 
 ###Partial####
-res_wek = np.load(r'../objects/wektors_part.npy', allow_pickle=True)
+res_wek = np.load(r'objects/wektors_part.npy', allow_pickle=True)
 res_wek = [wek[0:20] for wek in res_wek]
 zzz = np.stack(res_wek)
 res_wek = zzz.reshape([4269,2000])
-df = pd.read_csv('../dataframes/binary_cls.csv')
+df = pd.read_csv('dataframes/binary_cls.csv')
 X_train, X_test, y_train, y_test = train_test_split(res_wek, df['klasa'], test_size=0.20)
 
 sv.fit(X_train, y_train)

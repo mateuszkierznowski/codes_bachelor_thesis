@@ -32,7 +32,7 @@ def delete_s_mark(word):
 all_sen = [delete_s_mark(kom) for kom in all_sen]
 
 #delete stopwords
-with open('../objects/stopwords.txt', 'r', encoding='utf-8') as f:
+with open('objects/stopwords.txt', 'r', encoding='utf-8') as f:
     stop_words = [re.sub(r'\n', '', line) for line in f]
 
 def delete_stop_word(line):
