@@ -5,7 +5,7 @@ import re
 from nltk.tokenize import word_tokenize
 from autocorrect import Speller
 
-k = Komentarze('../Komentarze').load()
+k = Komentarze('C:\\Users\\Mati\\Desktop\\Praca Magr\\Praca Licencjacka\\praca_licencjacka_kody/Komentarze').load()
 
 df = k.get_dataframe()
 df['klasa']

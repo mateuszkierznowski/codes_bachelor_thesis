@@ -1,0 +1,17 @@
+;model;precision;recall;f1;accuracy;
+0;Maszyna wektorów noœnych;69,77%;59,04%;63,70%;68,25%;
+1;Algorytm lasów losowych;69,68%;60,57%;64,44%;68,60%;
+2;Wielomianowy Naiwny Bayes;70,57%;70,05%;70,07%;71,75%;
+3;K-najbli¿szych s¹siadów;55,30%;76,28%;64,11%;59,40%;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;model;precyzja;pe³noœæ;f1;dok³adnoœc
+;;Maszyna wektorów noœnych;69,77%;59,04%;63,70%;68,25%
+;;Algorytm lasów losowych;69,68%;60,57%;64,44%;68,60%
+;;Wielomianowy Naiwny Bayes;70,57%;70,05%;70,07%;71,75%
+;;K-najbli¿szych s¹siadów;55,30%;76,28%;64,11%;59,40%
